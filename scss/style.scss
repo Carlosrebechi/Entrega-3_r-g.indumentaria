@@ -7,81 +7,13 @@
 @import "components/navbar";
 
 //layout
+@import "layout/index";
+@import "layout/contactos";
 
 
 
 
-.card-container{
-    /*a la section le agrego flex. de esta forma las ubico de manera horizontal*/ 
-    display: flex;
-    justify-content: space-between;
-    margin:  20px 40px 20px 40px;
-    .card{
-        width: 300px;
-        background-color: #00c4ff;
-        border-radius: 8px;
-    }
-    .card img{
-        width: 100%;
-        height: auto;
-    }
-    .card-text{
-        /*A los textos los ubico uno debajo del otro con flex*/
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        padding: 16px;
-    }
-    
-    .card-text h3{
-        font-size: 24px;
-    }
-    .card-text p{
-        font-size: 16px;
-    }
-    .card-text a{
-        padding: 16px;
-        background-color: #333;
-        border-radius: 4px;
-        color: #f0f0f0;
-    }   
-}
 
-
-
-
-.map-container {
-    position: relative;
-    
-    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    background: #eee;
-    .map-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 40%;
-        height: 40%;
-    }
-    .map-container {
-        position: relative;
-        padding-bottom: 56.25%; /* Aspect ratio 16:9 */
-        height: 0;
-        overflow: hidden;
-        max-width: 100%;
-        background: #eee;
-    }
-    
-    .map-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-}
 
 
 
