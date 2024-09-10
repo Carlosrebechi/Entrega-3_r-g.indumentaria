@@ -36,3 +36,57 @@
     }   
 }
 
+h2 {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-orange;
+    }
+
+    $temporada: verano;
+
+    .final {
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    @if $temporada == verano {
+        background: url("../imagenes/puedes-mas-imagina.webp");
+        background-size: cover;
+       h5 {
+        color: rgb(23, 74, 118);
+        font-size: 80px;
+        position: relative;
+        span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 400px;
+            height: 400px;
+            border-radius: 100%;
+            filter: blur(10px);
+        }
+       } 
+
+        } @else if $temporada == invierno {
+            background: url("../Imagenes/Bendita\ la\ vida.webp");
+            background-size: cover;
+        h5 {
+            color: darkblue;
+            font-size: 80px;
+        }
+        }
+        
+        @else {
+            background-color: #191919;
+        }
+    
+    }
+
+
+
+
+
