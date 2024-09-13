@@ -42,7 +42,7 @@ h2 {
     align-items: center;
     justify-content: center;
     background-color: $color-orange;
-    }
+}
 
     $temporada: verano;
 
@@ -51,6 +51,7 @@ h2 {
         display: flex;
         align-items: center;
         justify-content: center;
+        
     
     @if $temporada == verano {
         background: url("../imagenes/puedes-mas-imagina.webp");
@@ -75,8 +76,8 @@ h2 {
             background: url("../Imagenes/Bendita\ la\ vida.webp");
             background-size: cover;
         h5 {
-            color: darkblue;
-            font-size: 80px;
+            color: rgb(28, 28, 130);
+            font-size: 800px;
         }
         }
         
@@ -85,7 +86,6 @@ h2 {
         }
     
     }
-
 
 
 
